@@ -77,27 +77,41 @@
       // let { nombre, apellido, edad } = persona;
       // console.log(nombre, apellido, edad);
       // objetos literales
-      let nombre = "Kenina",
-        edad = 7;
-      const perro = {
-        nombre: nombre,
-        edad: edad,
-        ladrar: function () {
-          console.log("Guau Guau");
-        },
-      };
-      console.log(perro);
-      perro.ladrar();
-      const dog = {
-        nombre,
-        edad,
-        raza: "Callejero",
-        ladrar() {
-          console.log("Guau Guau Guau");
-        },
-      };
-      console.log(dog);
-      dog.ladrar();
+      // let nombre = "Kenina",
+      //   edad = 7;
+      // const perro = {
+      //   nombre: nombre,
+      //   edad: edad,
+      //   ladrar: function () {
+      //     console.log("Guau Guau");
+      //   },
+      // };
+      // console.log(perro);
+      // perro.ladrar();
+      // const dog = {
+      //   nombre,
+      //   edad,
+      //   raza: "Callejero",
+      //   ladrar() {
+      //     console.log("Guau Guau Guau");
+      //   },
+      // };
+      // console.log(dog);
+      // dog.ladrar();
+      // Parametros rest & operador Spread
+      // function sumar(a, b, ...c) {
+      //   let resultado = a + b;
+      //   c.forEach(function (n) {
+      //     resultado += n;
+      //   });
+      //   return resultado;
+      // }
+      // console.log(sumar(1, 2, 5, 4, 6, 8));
+      // const arr1 = [1, 2, 3, 4, 5],
+      //   arr2 = [6, 7, 8, 9, 0];
+      // console.log(arr1, arr2);
+      // const arr3 = [...arr1, ...arr2];
+      // console.log(arr3);
     </script>
   </body>
 </html>
