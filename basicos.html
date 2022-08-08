@@ -10,26 +10,40 @@
     <h1>Hello world</h1>
     <script>
       // ciclos
-      let contador = 0;
-      while (contador < 10) {
-        console.log(contador);
-        contador++;
-      }
-      do {
-        console.log("do while: " + contador);
-        contador++;
-      } while (contador < 20);
-      const david = {
-        Nombre: "David",
-        Apellido: "Bravo",
-        Edad: 35,
-      };
-      for (const propiedad in david) {
-        console.log(`Key: ${propiedad}, Value:${david[propiedad]}`);
-      }
-      let cadena = "hola mundo";
-      for (const iterator of cadena) {
-        console.log(iterator);
+      // let contador = 0;
+      // while (contador < 10) {
+      //   console.log(contador);
+      //   contador++;
+      // }
+      // do {
+      //   console.log("do while: " + contador);
+      //   contador++;
+      // } while (contador < 20);
+      // const david = {
+      //   Nombre: "David",
+      //   Apellido: "Bravo",
+      //   Edad: 35,
+      // };
+      // for (const propiedad in david) {
+      //   console.log(`Key: ${propiedad}, Value:${david[propiedad]}`);
+      // }
+      // let cadena = "hola mundo";
+      // for (const iterator of cadena) {
+      //   console.log(iterator);
+      // }
+      // manejo de errores
+      try {
+        let numero = "10y";
+        if (isNaN(numero)) {
+          throw new Error("El caracter intruducido noe es un numero");
+        }
+        console.log(numero * numero);
+      } catch (error) {
+        console.log(
+          "Catch, captura cualquier error surgido o lanzado en el try"
+        );
+      } finally {
+        console.log("Otras cosas en el finally");
       }
     </script>
   </body>
