@@ -46,7 +46,9 @@ const snoopy = new Animnal("Snoopy", "macho"),
   lolaBunny = new Animnal("lola", "mujer");
 console.log(snoopy);
 console.log(lolaBunny);
+
 snoopy.sonar();
 snoopy.saludar();
+
 lolaBunny.sonar();
 lolaBunny.saludar();
