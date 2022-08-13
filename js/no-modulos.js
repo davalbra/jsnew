@@ -1,1 +1,1 @@
-console.log("todavia no soporto enma Script");
+console.log("Mi navegador no soporta Módulos +ES6");

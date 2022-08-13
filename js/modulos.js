@@ -1,8 +1,12 @@
-import saludar, { PI, usuario } from "./constantes.js";
-import { aritmetica } from "./aritmetica.js";
-console.log("Archivos modulos.js");
-console.log(PI);
-console.log(usuario);
-console.log(aritmetica.sumar(3, 4));
-console.log(aritmetica.restar(3, 4));
-console.log(saludar());
+/* **********     Curso JavaScript: 33. Módulos ( import / export ) - #jonmircha     ********** */
+import saludar, { Saludar, PI, usuario } from "./constantes.js";
+import { aritmetica as calculos } from "./aritmetica.js";
+
+console.log("Archivo modulos.js");
+console.log(PI, usuario);
+//console.log(aritmetica.sumar(3, 4));
+console.log(calculos.sumar(3, 4));
+console.log(calculos.restar(3, 4));
+saludar();
+let saludo = new Saludar();
+saludo;
